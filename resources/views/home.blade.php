@@ -5,7 +5,10 @@
 @section('content')
 
     <div class="row">
-        <p>{{$trains}}</p>
+        @foreach ($trains as $train)
+            <p>{{$train->Azienda}}</p>
+            <p>{{$train->Orario_di_partenza}}</p>
+        @endforeach
     </div>
 
 @endsection
